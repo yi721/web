@@ -1,0 +1,381 @@
+.transition-250ms {
+    transition: all 250ms ease;
+}
+
+
+.heart-jump {
+    border: 3px solid cadetblue;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 100px auto;
+    animation: heart-jump 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes heart-fall {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(100px);
+    }
+
+}
+
+.heart-fall {
+    animation: heart-fall 1s;
+}
+
+.heart-jump-no-border {
+    animation: heart-jump-no-border 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.heart-jump:hover {
+    animation: heart-jump .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.heart-jump-no-border:hover {
+    animation: heart-jump-no-border .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes heart-jump {
+    from {
+        width: 70px;
+        height: 70px;
+        border: 3px solid cadetblue;
+    }
+    to {
+        width: 100px;
+        height: 100px;
+        border: 7px solid cadetblue;
+
+    }
+
+}
+
+@keyframes heart-jump-no-border {
+    from {
+        width: 20vw;
+        height: 20vw;
+    }
+    to {
+        width: 30vw;
+        height: 30vw;
+    }
+
+}
+
+@keyframes change-img {
+    from {
+        display: none;
+    }
+    to {
+        display: block;
+    }
+
+}
+
+@keyframes hide-img {
+    from {
+        display: block;
+    }
+    to {
+        display: none;
+    }
+}
+
+@keyframes move-up {
+    from {
+        transform: translateY(80vh);
+    }
+    to {
+        transform: translateY(-80vh);
+    }
+}
+
+@keyframes move-up-40vh {
+    from {
+        transform: translateY(40vh);
+    }
+    to {
+        transform: translateY(-40vh);
+    }
+}
+
+@keyframes move-jelly {
+    from {
+        transform: translateY(-400px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.move-jelly {
+    animation: move-jelly 10s infinite backwards;
+    animation-direction: alternate;
+    display: none;
+}
+
+
+.move-up {
+    animation: move-up 10s infinite backwards;
+    animation-direction: alternate;
+    display: none;
+}
+
+.move-up-40vh {
+    animation: move-up-40vh 10s infinite backwards;
+    animation-direction: alternate;
+    display: none;
+}
+
+@media screen and (min-width: 1300px) {
+    .move-up {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 1300px) {
+    .move-jelly {
+        display: block;
+    }
+}
+
+@keyframes move-right {
+    from {
+        transform: translateX(-30vw);
+    }
+    to {
+        transform: translateX(30vw);
+    }
+}
+
+@keyframes move-right-btn {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(2vw);
+    }
+}
+
+.catch-jelly {
+    width: 5vw;
+    height: 5vw;
+    animation: move-right 10s infinite;
+    animation-direction: alternate;
+    transform: rotateY(180deg);
+}
+
+.catch-jelly img {
+    width: 5vw;
+    height: 5vw;
+}
+
+.catch-jelly:hover {
+    transform: rotate(360deg);
+}
+
+
+.hover-right-long {
+    transition: transform 1s;
+}
+
+.hover-right-long:hover {
+
+    transform: translateX(70px) translateY(20px);
+}
+
+.hover-rotate {
+    transition: 1s;
+}
+
+
+.hover-rotate:hover {
+    transform: rotate(360deg);
+}
+
+.hover-big {
+    transition: transform 1s;
+}
+
+
+.hover-big-list li {
+    transition: transform 1.6s;
+}
+
+.hover-big:hover {
+    transform: scale(1.2);
+}
+
+.hover-big-1-1:hover {
+    transform: scale(1.1);
+}
+
+
+.hover-big-list li:hover {
+    transform: scale(1.2);
+}
+
+
+.hover-show {
+    transition: all 1s;
+}
+
+.hover-show:hover ul {
+    display: block;
+}
+
+.hover-slow {
+    transition: all 1s;
+}
+
+.hover-slow li {
+    transition: all 1s;
+}
+
+.hover-slow a {
+    transition: all 1s;
+}
+
+@keyframes shake {
+    from {
+        transform: rotate(15deg);
+    }
+    to {
+        transform: rotate(-15deg);
+    }
+}
+
+@keyframes change-circle {
+    from {
+    }
+    to {
+        border-radius: 50%;
+    }
+}
+
+
+.hover-border:hover {
+    border: gold 3px;
+}
+
+.hover-shake:hover {
+    animation: shake .3s infinite;
+    animation-direction: alternate;
+}
+
+.hover-circle:hover {
+    animation: change-circle 1s forwards;
+}
+
+.hover-right-btn:hover {
+    animation: move-right-btn 1s forwards;
+}
+
+.move-up-picture ul {
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 0 10px mediumpurple;
+}
+
+.hover-shadow-list li:hover {
+    box-shadow: 0 0 10px cornflowerblue;
+}
+
+.hover-shadow-list-green li:hover {
+    box-shadow: 0 0 10px greenyellow;
+}
+
+.hover-shadow-list-pink li:hover {
+    box-shadow: 0 0 10px pink;
+}
+
+.hover-text-shadow:hover {
+    text-shadow: 5px 5px 20px hotpink;
+}
+
+
+.move-up-picture li:before {
+    content: counter(listxh);
+    background: deepskyblue;
+    padding: 2px 5px;
+    color: hsl(0, 0%, 100%);
+    margin-right: 5px;
+    vertical-align: top;
+    float: left;
+}
+
+.move-up-picture li {
+    counter-increment: listxh;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 8px;
+    transition: text-shadow 1s linear;
+    border-bottom: hsl(0, 0%, 80%) dashed 1px;
+    max-width: 420px;
+}
+
+.p-img img {
+    width: 120px;
+    height: 80px;
+}
+
+.move-up-picture .curr .p-img {
+    float: left;
+}
+
+.move-up-picture .curr .p-name strong {
+    display: block;
+    color: hsl(0, 100%, 50%);
+    font-size: 1rem;
+}
+
+.move-up-picture .curr .p-name del {
+    display: block;
+    font-size: 1rem;
+}
+
+.move-up-picture .curr {
+    display: none;
+    transition: all 1s;
+}
+
+.move-up-picture a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.move-up-picture li {
+    color: white;
+    transition: all 1s;
+}
+
+.move-up-picture li:hover {
+    text-shadow: 1px 4px 4px orange;
+    white-space: normal;
+}
+
+.move-up-picture li:hover .selling {
+    display: none;
+}
+
+.move-up-picture li:hover .curr {
+    display: block;
+}

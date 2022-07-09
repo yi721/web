@@ -1,0 +1,20 @@
+@keyframes scaleDraw { 
+    0%{
+        transform: scale(1);  
+    }
+    25%{
+        transform: scale(1.5);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.5);
+    }
+}
+
+.showImg {
+    width: 400px;
+    height: 1000px;
+    animation: scaleDraw 5s ease-in-out infinite;
+}

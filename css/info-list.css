@@ -1,0 +1,45 @@
+.info-list{
+
+    display: flex;
+    flex-direction: row;
+}
+
+.info-list li{
+    list-style: none;
+    width: 120px;
+}
+
+
+.list-box {
+    margin-right: 20px;
+    padding: 0;
+    text-indent: 10px;
+}
+
+
+.list-box li{
+    height: 30px;
+    color: white;
+    background-color: deepskyblue;
+    margin: 2px;
+    text-decoration: none;
+    list-style:none;
+}
+
+.list-box a{
+    color: white;
+    text-decoration: none;
+    text-indent: 20px;
+}
+
+.width-200 li{
+    width: 200px;
+}
+
+.width-300 li{
+    width: 300px;
+}
+
+.long-ul{
+    width: 500px;
+}

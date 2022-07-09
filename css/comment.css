@@ -1,0 +1,32 @@
+
+.comment-btn{
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.comment-to-comment-btn{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 3vw;
+    height: 3vw;
+}
+
+.people-comment{
+    margin-top: 1vw;
+    width: 50vw;
+    height: content-box;
+}
+
+.comment-to-comment-field{
+    width: 40vw;
+    display: none;
+}
+.box-margin{
+    margin-top: 1vw;
+}
+
+.comment-list li{
+    margin: 2px;
+    text-decoration: none;
+    list-style:none;
+}
